@@ -1,119 +1,110 @@
 # Creality Ender 7 - Smart Orbiter 3 + Klipper Build
 
-![Vista general del montaje](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/images/Ender%207%20X%20S03%20v3.3-1.png)
+![Overview Image](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/images/Ender%207%20X%20S03%20v3.3-1.png)
 
-## 🛠️ Descripción (Español)
+## 📑 Table of Contents / Tabla de Contenidos
 
-Este proyecto documenta la modificación de una impresora **Creality Ender 7** con el extrusor directo **Smart Orbiter 3**, junto con la implementación de firmware **Klipper**. El objetivo fue mejorar la calidad de impresión, la precisión en extrusión y la capacidad de trabajar con filamentos flexibles.
-
-Incluye:
-- Archivos de montaje en formato `.3mf`
-- Configuración de firmware Klipper
-- Perfiles de laminado (OrcaSlicer)
-- Esquema de conexiones electrónicas
-- Fotografías del montaje
-- Archivos editables `.step` para personalización
-
-🔗 Más información sobre el extrusor Smart Orbiter 3 en el sitio oficial:  
-[https://www.orbiterprojects.com/so3/](https://www.orbiterprojects.com/so3/)
+- [🛠️ Project Description / Descripción del Proyecto](#project-description--descripción-del-proyecto)
+- [⚠️ Important Warnings / Advertencias](#important-warnings-before-installing-this-mod--advertencias-importantes-antes-de-instalar-el-mod)
+- [📂 Repository Structure / Estructura del Repositorio](#repository-structure--estructura-del-repositorio)
+- [⚙️ Klipper Configuration / Configuración de Klipper](#klipper-configuration--configuración-de-klipper)
+- [🧱 Mount Files / Archivos de Montaje](#mount-files--archivos-de-montaje)
+- [🧩 EzMount Mod / Mod EzMount](#ezmount-mod--mod-ezmount)
+- [🔧 Installation / Instalación](#installation--instalación)
+- [📸 Credits / Créditos](#credits--créditos)
+- [📜 License / Licencia](#license--licencia)
 
 ---
 
-## 🛠️ Description (English)
+## 🛠️ Project Description / Descripción del Proyecto
 
-This project documents the modification of a **Creality Ender 7** 3D printer using a **Smart Orbiter 3** direct-drive extruder and **Klipper** firmware. The goal is to enhance print quality, extrusion accuracy, and compatibility with flexible filaments.
+This project documents the modification of a **Creality Ender 7** 3D printer using a **Smart Orbiter 3** direct-drive extruder, combined with **Klipper** firmware. The goal is to improve print quality, extrusion accuracy, and compatibility with flexible filaments.
 
-Includes:
-- Mount parts in `.3mf` format
-- Klipper firmware configuration
-- Slicer profiles (OrcaSlicer)
-- Wiring diagrams
-- Assembly photos
-- Editable `.step` files for customization
+Este proyecto documenta la modificación de una **Creality Ender 7** con un extrusor directo **Smart Orbiter 3**, utilizando firmware **Klipper**, con el fin de mejorar la calidad de impresión y la compatibilidad con filamentos flexibles.
 
-🔗 Learn more about the Smart Orbiter 3 extruder at the official site:  
-[https://www.orbiterprojects.com/so3/](https://www.orbiterprojects.com/so3/)
+🔗 Learn more / Más información: [https://www.orbiterprojects.com/so3/](https://www.orbiterprojects.com/so3/)
 
 ---
 
-## 📂 Contenido del repositorio / Repository structure
+## ⚠️ Important Warnings Before Installing This Mod / Advertencias importantes antes de instalar el mod
 
-- `mount/3mf/`: Archivos 3D `.3mf` listos para imprimir / Printable parts  
-- `mount/editable/`: Archivos `.step` editables / Editable CAD files  
-- `klipper/`: Archivos de configuración para Klipper / Klipper firmware config  
-- `slicer/OrcaSlicer/`: Perfiles exportados desde OrcaSlicer / Slicer profiles  
-- `images/`: Fotografías del montaje / Assembly photos  
-- `wiring/`: Diagramas de conexiones / Wiring diagrams  
-- `SO3/SO3_EzMount_v1/`: Mod para montar fan y probe directamente sobre el extrusor
+1. 📐 **Reduced print volume / Área de impresión reducida**:  
+   From / De **250x250x300 mm** → To / A **240x240x295 mm**
 
----
+2. ✂️ **Y-axis belt modification / Modificación de correas Y**:  
+   You'll need to trim the Y belts / Se deben recortar ligeramente las correas del eje Y.
 
-## ⚙️ Configuración Klipper personalizada / Custom Klipper Configuration
-
-La carpeta `klipper/` contiene todos los archivos personalizados utilizados en este mod para Klipper. Está organizada para facilitar la integración modular.
-
-Incluye:
-- `printer.cfg`: archivo principal de configuración.
-- `SO3.cfg`: configuración del extrusor Smart Orbiter 3.
-- `crtouch.cfg` y `microprobe.cfg`: soporte para sensores de autonivelación.
-- `drivers_tmc2209.cfg` y `drivers_tmc5160.cfg`: según el tipo de driver que uses.
-- `macros.cfg`: comandos útiles para calibración y pruebas.
-
-> Puedes importar estos archivos directamente o integrarlos con `include`.
+3. 🛑 **Y endstop relocation / Reubicación del endstop del eje Y**:  
+   Must be moved forward / Debe moverse hacia adelante.  
+   ✅ Adapter included / Adaptador incluido
 
 ---
 
-## 🧱 Archivos de Montaje / Mount Files
+## 📂 Repository Structure / Estructura del Repositorio
 
-La carpeta `mount/` contiene todos los archivos necesarios para adaptar el extrusor **Smart Orbiter 3** a la **Creality Ender 7**:
-
-- `3mf/`: Archivos orientados y preparados para impresión
-- `editable/`: Archivos `.step` para personalización CAD
-
-Incluye soportes, espaciadores, adaptadores y ductos diseñados específicamente para este montaje.
+- `mount/3mf/`: Printable `.3mf` files / Archivos `.3mf` listos para imprimir  
+- `mount/editable/`: Editable `.step` files / Archivos `.step` editables  
+- `klipper/`: Klipper config / Configuración Klipper  
+- `slicer/OrcaSlicer/`: OrcaSlicer profiles  
+- `images/`: Assembly photos / Fotos del ensamblaje  
+- `wiring/`: Wiring diagrams / Diagramas de conexiones  
+- `SO3/SO3_EzMount_v1/`: Fan + probe mount mod
 
 ---
 
-## 🧩 Modificación EzMount para SO3
+## ⚙️ Klipper Configuration / Configuración de Klipper
 
-Esta carpeta contiene una versión modificada del soporte del **Smart Orbiter 3** llamada **EzMount**, diseñada para simplificar el montaje del ventilador de capa y el sensor de nivelación (probe) directamente sobre el cuerpo del extrusor.
+- `printer.cfg`: Main config  
+- `SO3.cfg`: Smart Orbiter 3 config  
+- `crtouch.cfg` / `microprobe.cfg`: Probes  
+- `drivers_tmc2209.cfg` / `tmc5160.cfg`: Stepper drivers  
+- `macros.cfg`: Useful macros
 
-Ubicación: `SO3/SO3_EzMount_v1/`
+Modular configuration using `include`.
 
-Incluye:
-- Archivos `.3mf` para:
-  - Soporte para ventilador
-  - Soporte para sensor (CR-Touch / Microprobe)
-  - Ensamble principal
-- Imágenes de referencia del modelo ensamblado
+---
 
-Imágenes de vista previa:
+## 🧱 Mount Files / Archivos de Montaje
+
+Parts to mount the Smart Orbiter 3 on the Ender 7:
+
+- `3mf/`: Ready-to-print  
+- `editable/`: Editable `.step` for customization
+
+---
+
+## 🧩 EzMount Mod / Mod EzMount
+
+Custom mount for the fan and probe directly on SO3:
+
+- Located in `SO3/SO3_EzMount_v1/`
+- `.3mf` files
+- Previews:
+
 ![S03 EzMount P1](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P1.png)
 ![S03 EzMount P2](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P2.png)
 ![S03 EzMount P3](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P3.png)
 
-> Esta mejora permite reducir la cantidad de piezas y cables, ofreciendo un diseño más compacto y funcional.
+---
+
+## 🔧 Installation / Instalación
+
+1. Print from `mount/3mf/` or `SO3_EzMount_v1/`  
+2. Trim belts & move endstop  
+3. Setup Klipper with `klipper/`  
+4. Tune PID, offsets  
+5. Import OrcaSlicer profile
 
 ---
 
-## 🔧 Instalación / Installation
+## 📸 Credits / Créditos
 
-1. Imprime los archivos `.3mf` desde `mount/3mf/` o `SO3_EzMount_v1/`  
-2. Revisa el diagrama de conexiones en `wiring/`  
-3. Carga los archivos de Klipper desde `klipper/` en tu Raspberry Pi  
-4. Ajusta PID, offsets y calibraciones según tu impresora  
-5. Importa el perfil `.json` desde `slicer/OrcaSlicer/` en OrcaSlicer  
+Designed by / Diseño: **@designnc**  
+Based on: Smart Orbiter 3 by **LDO / MihaiDesign**  
+Thanks to / Gracias a: Klipper + Ender 7 community
 
 ---
 
-## 📸 Créditos / Credits
+## 📜 License / Licencia
 
-Modificación realizada por **@designnc**  
-Basado en el diseño original de Smart Orbiter 3 por **LDO / MihaiDesign**  
-Con aportes de la comunidad Klipper y usuarios de Ender 7  
-
----
-
-## 📜 Licencia / License
-
-MIT o CC-BY-4.0, dependiendo del contenido incluido. Revisa archivos individuales para más detalles.
+MIT or CC-BY-4.0 depending on file / según el archivo.

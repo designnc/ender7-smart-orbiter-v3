@@ -11,6 +11,7 @@
 - [Mount Files / Archivos de Montaje](#mount-files--archivos-de-montaje)
   - [Assembly Notes / Notas de Ensamblaje](#assembly-notes--notas-de-ensamblaje)
 - [EzMount Mod / Mod EzMount](#ezmount-mod--mod-ezmount)
+- [Known Issues / Problemas Conocidos](#known-issues--problemas-conocidos)
 - [Installation / Instalación](#installation--instalación)
 - [Credits / Créditos](#credits--créditos)
 - [License / Licencia](#license--licencia)
@@ -108,13 +109,41 @@ Custom mount for the fan and probe directly on SO3:
 
 ---
 
+## Known Issues / Problemas Conocidos
+
+These issues may vary depending on print speed, slicer settings, and printer condition.
+
+---
+
+Estos problemas pueden variar según la velocidad de impresión, el laminador y el estado de la impresora.
+
+### 🌀 Vibrations / Vibraciones
+
+- Some noticeable **vibrations** during fast movements or high-speed printing  
+- Using the original **plastic cover** over the head may worsen this — removal is recommended
+
+---
+
+Durante movimientos rápidos o impresiones a alta velocidad, se pueden notar **vibraciones**.  
+El uso de la **tapa protectora plástica original** puede aumentar estas vibraciones — se recomienda retirarla.
+
+### 🔊 Fan Noise / Ruido del Ventilador
+
+- The small **cooling fan on the SO3** can produce a **high-pitched noise** ("mosquito-like") due to its speed and size
+
+---
+
+El pequeño **ventilador de enfriamiento del SO3** puede generar un **ruido agudo tipo mosquito** debido a su alta velocidad y tamaño reducido.
+
+---
+
 ## Installation / Instalación
 
 1. Print parts from `mount/3mf/` or `SO3_EzMount_v1/`  
 2. Trim Y belts and relocate endstop (adapter included)  
 3. Load Klipper config files from `klipper/`  
 4. Tune PID, axis offsets and travel limits  
-5. Import OrcaSlicer profile from `slicer/OrcaSlicer/`
+5. Import OrcaSlicer profile from `slicer/OrcaSlicer/` *(coming soon)*
 
 ---
 

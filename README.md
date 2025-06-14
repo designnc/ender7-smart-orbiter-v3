@@ -45,23 +45,18 @@ Includes:
 
 ---
 
-## 🧰 Requisitos / Requirements
+## ⚙️ Configuración Klipper personalizada / Custom Klipper Configuration
 
-- Creality Ender 7  
-- Smart Orbiter 3 (con stepper de 10:1 o 20:1)  
-- Raspberry Pi o similar con Klipper  
-- Fuente de alimentación estable  
-- Impresora 3D adicional para imprimir soportes  
+La carpeta `klipper/` contiene todos los archivos personalizados utilizados en este mod para Klipper. Está organizada para facilitar la integración modular.
 
----
+Incluye:
+- `printer.cfg`: archivo principal de configuración.
+- `SO3.cfg`: configuración del extrusor Smart Orbiter 3.
+- `crtouch.cfg` y `microprobe.cfg`: soporte para sensores de autonivelación.
+- `drivers_tmc2209.cfg` y `drivers_tmc5160.cfg`: según el tipo de driver que uses.
+- `macros.cfg`: comandos útiles para calibración y pruebas.
 
-## 🔧 Instalación / Installation
-
-1. Imprime los archivos `.3mf` desde `mount/3mf/`  
-2. Revisa el diagrama de conexiones en `wiring/`  
-3. Carga los archivos de Klipper desde `klipper/` en tu Raspberry Pi  
-4. Ajusta PID, offsets y calibraciones según tu impresora  
-5. Importa el perfil `.json` desde `slicer/OrcaSlicer/` en OrcaSlicer  
+> Puedes importar estos archivos directamente o integrarlos con `include`.
 
 ---
 
@@ -73,6 +68,16 @@ La carpeta `mount/` contiene todos los archivos necesarios para adaptar el extru
 - `editable/`: Archivos `.step` para personalización CAD
 
 Incluye soportes, espaciadores, adaptadores y ductos diseñados específicamente para este montaje.
+
+---
+
+## 🔧 Instalación / Installation
+
+1. Imprime los archivos `.3mf` desde `mount/3mf/`  
+2. Revisa el diagrama de conexiones en `wiring/`  
+3. Carga los archivos de Klipper desde `klipper/` en tu Raspberry Pi  
+4. Ajusta PID, offsets y calibraciones según tu impresora  
+5. Importa el perfil `.json` desde `slicer/OrcaSlicer/` en OrcaSlicer  
 
 ---
 

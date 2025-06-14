@@ -1,5 +1,7 @@
 # Creality Ender 7 - Smart Orbiter 3 + Klipper Build
 
+![Vista general del montaje](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/images/Ender%207%20X%20S03%20v3.3-1.png)
+
 ## 🛠️ Descripción (Español)
 
 Este proyecto documenta la modificación de una impresora **Creality Ender 7** con el extrusor directo **Smart Orbiter 3**, junto con la implementación de firmware **Klipper**. El objetivo fue mejorar la calidad de impresión, la precisión en extrusión y la capacidad de trabajar con filamentos flexibles.
@@ -42,6 +44,7 @@ Includes:
 - `slicer/OrcaSlicer/`: Perfiles exportados desde OrcaSlicer / Slicer profiles  
 - `images/`: Fotografías del montaje / Assembly photos  
 - `wiring/`: Diagramas de conexiones / Wiring diagrams  
+- `SO3/SO3_EzMount_v1/`: Mod para montar fan y probe directamente sobre el extrusor
 
 ---
 
@@ -71,9 +74,31 @@ Incluye soportes, espaciadores, adaptadores y ductos diseñados específicamente
 
 ---
 
+## 🧩 Modificación EzMount para SO3
+
+Esta carpeta contiene una versión modificada del soporte del **Smart Orbiter 3** llamada **EzMount**, diseñada para simplificar el montaje del ventilador de capa y el sensor de nivelación (probe) directamente sobre el cuerpo del extrusor.
+
+Ubicación: `SO3/SO3_EzMount_v1/`
+
+Incluye:
+- Archivos `.3mf` para:
+  - Soporte para ventilador
+  - Soporte para sensor (CR-Touch / Microprobe)
+  - Ensamble principal
+- Imágenes de referencia del modelo ensamblado
+
+Imágenes de vista previa:
+![S03 EzMount P1](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P1.png)
+![S03 EzMount P2](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P2.png)
+![S03 EzMount P3](https://github.com/designnc/ender7-smart-orbiter-v3/raw/main/SO3/SO3_EzMount_v1/S03%20EzMount%20V1.0%20P3.png)
+
+> Esta mejora permite reducir la cantidad de piezas y cables, ofreciendo un diseño más compacto y funcional.
+
+---
+
 ## 🔧 Instalación / Installation
 
-1. Imprime los archivos `.3mf` desde `mount/3mf/`  
+1. Imprime los archivos `.3mf` desde `mount/3mf/` o `SO3_EzMount_v1/`  
 2. Revisa el diagrama de conexiones en `wiring/`  
 3. Carga los archivos de Klipper desde `klipper/` en tu Raspberry Pi  
 4. Ajusta PID, offsets y calibraciones según tu impresora  

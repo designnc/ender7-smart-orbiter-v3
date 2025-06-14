@@ -9,6 +9,7 @@
 - [Repository Structure / Estructura del Repositorio](#repository-structure--estructura-del-repositorio)
 - [Klipper Configuration / Configuración de Klipper](#klipper-configuration--configuración-de-klipper)
 - [Mount Files / Archivos de Montaje](#mount-files--archivos-de-montaje)
+  - [Assembly Notes / Notas de Ensamblaje](#assembly-notes--notas-de-ensamblaje)
 - [EzMount Mod / Mod EzMount](#ezmount-mod--mod-ezmount)
 - [Installation / Instalación](#installation--instalación)
 - [Credits / Créditos](#credits--créditos)
@@ -31,8 +32,8 @@ Este proyecto documenta la modificación de una **Creality Ender 7** con un extr
 1. **Reduced print volume / Área de impresión reducida**:  
    From / De **250x250x300 mm** → To / A **240x240x295 mm**
 
-2. **Y-axis belt modification / Modificación de correas Y**:  
-   You'll need to trim the Y belts / Se deben recortar ligeramente las correas del eje Y.
+2. **belt modification / Modificación de correas**:  
+   You'll need to trim the belts / Se deben recortar ligeramente las correas.
 
 3. **Y endstop relocation / Reubicación del endstop del eje Y**:  
    Must be moved forward / Debe moverse hacia adelante.  
@@ -44,6 +45,7 @@ Este proyecto documenta la modificación de una **Creality Ender 7** con un extr
 
 - `mount/3mf/`: Printable `.3mf` files / Archivos `.3mf` listos para imprimir  
 - `mount/editable/`: Editable `.step` files / Archivos `.step` editables  
+- `mount/Ender 7 X SO3 v.3.3/`: Main mount  
 - `klipper/`: Klipper config / Configuración Klipper  
 - `slicer/OrcaSlicer/`: OrcaSlicer profiles  
 - `images/`: Assembly photos / Fotos del ensamblaje  
@@ -69,7 +71,24 @@ Modular configuration using `include`.
 Parts to mount the Smart Orbiter 3 on the Ender 7:
 
 - `3mf/`: Ready-to-print  
-- `editable/`: Editable `.step` for customization
+- `editable/`: Editable `.step` for customization  
+- Main mount: `mount/Ender 7 X SO3 v.3.3/`
+
+### Assembly Notes / Notas de Ensamblaje
+
+The main mount located in `mount/Ender 7 X SO3 v.3.3/` includes all components required to attach the Smart Orbiter 3 to the Ender 7.
+
+- Uses **M3 screws** and **heat-set threaded brass inserts**
+- Includes motor mount, hotend support, fan duct, and belt holder
+- Exact screw lengths and quantities to be confirmed
+
+---
+
+El montaje principal ubicado en `mount/Ender 7 X SO3 v.3.3/` incluye todas las piezas necesarias para instalar el Smart Orbiter 3 en la Ender 7.
+
+- Utiliza **tornillos M3** y **insertos metálicos tipo termofijado**
+- Incluye soporte de motor, soporte de hotend, ducto de ventilación y tensor de correa
+- Las longitudes y cantidades exactas de tornillos serán confirmadas
 
 ---
 
@@ -102,6 +121,7 @@ Custom mount for the fan and probe directly on SO3:
 ## Credits / Créditos
 
 Based on: **Smart Orbiter 3** by **Dr. Róbert Lőrincz**, manufactured in collaboration with **LDO Motors**  
+Mod design and adaptation for Ender 7 by **@designnc**  
 Thanks to / Gracias a: Klipper + Ender 7 community
 
 ---
@@ -120,4 +140,4 @@ Este proyecto está licenciado bajo **Creative Commons Atribución-NoComercial-C
 
 Puedes modificar, adaptar y crear versiones derivadas **solo para uso no comercial**, siempre que **des crédito al autor original** (@designnc) y **compartas tus nuevas versiones bajo la misma licencia**.
 
-Más información: [https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es).
+Más información: [https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)

@@ -7,9 +7,12 @@ Este proyecto documenta la modificación de una impresora **Creality Ender 7** c
 Incluye:
 - Archivos STL impresos personalizados
 - Configuración de firmware Klipper
-- Perfiles de laminado (Cura / PrusaSlicer)
+- Perfiles de laminado (OrcaSlicer)
 - Esquema de conexiones electrónicas
 - Fotografías del montaje
+
+🔗 Más información sobre el extrusor Smart Orbiter 3 en el sitio oficial:  
+[https://www.ldo-motors.com/smart-orbiter](https://www.ldo-motors.com/smart-orbiter)
 
 ---
 
@@ -20,39 +23,42 @@ This project documents the modification of a **Creality Ender 7** 3D printer usi
 Includes:
 - Custom printable STL parts
 - Klipper firmware configuration
-- Slicer profiles (Cura / PrusaSlicer)
+- Slicer profiles (OrcaSlicer)
 - Wiring diagrams
 - Assembly photos
+
+🔗 Learn more about the Smart Orbiter 3 extruder at the official site:  
+[https://www.ldo-motors.com/smart-orbiter](https://www.ldo-motors.com/smart-orbiter)
 
 ---
 
 ## 📂 Contenido del repositorio / Repository structure
 
-- `stl/`: Archivos imprimibles personalizados / Printable STL files
-- `klipper/`: Archivos de configuración del firmware / Klipper configuration files
-- `slicer/`: Perfiles para Cura y/o PrusaSlicer / Slicer profiles
-- `images/`: Fotografías del proceso / Assembly photos
-- `wiring/`: Esquema de conexiones eléctricas / Wiring diagrams
+- `stl/`: Archivos imprimibles personalizados / Printable STL files  
+- `klipper/`: Archivos de configuración del firmware / Klipper configuration files  
+- `slicer/OrcaSlicer/`: Perfil OrcaSlicer exportado (.json)  
+- `images/`: Fotografías del proceso / Assembly photos  
+- `wiring/`: Esquema de conexiones eléctricas / Wiring diagrams  
 
 ---
 
 ## 🧰 Requisitos / Requirements
 
-- Creality Ender 7
-- Smart Orbiter 3 (con stepper de 10:1 o 20:1)
-- Raspberry Pi o similar con Klipper
-- Fuente de alimentación estable
-- Impresora 3D adicional para imprimir soportes
+- Creality Ender 7  
+- Smart Orbiter 3 (con stepper de 10:1 o 20:1)  
+- Raspberry Pi o similar con Klipper  
+- Fuente de alimentación estable  
+- Impresora 3D adicional para imprimir soportes  
 
 ---
 
 ## 🔧 Instalación / Installation
 
-1. Imprime los STL en la carpeta `stl/`
-2. Sigue el esquema de conexiones en `wiring/`
-3. Carga los archivos de Klipper en tu Raspberry Pi
-4. Ajusta PID, offsets y calibraciones según tu impresora
-5. Importa los perfiles en tu laminador
+1. Imprime los STL en la carpeta `stl/`  
+2. Sigue el esquema de conexiones en `wiring/`  
+3. Carga los archivos de Klipper en tu Raspberry Pi  
+4. Ajusta PID, offsets y calibraciones según tu impresora  
+5. Importa el perfil `.json` en **OrcaSlicer** desde `slicer/OrcaSlicer/`  
 
 ---
 
@@ -60,10 +66,10 @@ Includes:
 
 Modificación realizada por **@designnc**  
 Basado en el diseño original de Smart Orbiter 3 por **LDO / MihaiDesign**  
-Con aportes de la comunidad Klipper y usuarios de Ender 7
+Con aportes de la comunidad Klipper y usuarios de Ender 7  
 
 ---
 
 ## 📜 Licencia / License
 
-MIT o CC-BY-4.0, dependiendo del contenido.
+MIT o CC-BY-4.0, dependiendo del contenido incluido en cada carpeta. Revisa los archivos fuente si corresponde.

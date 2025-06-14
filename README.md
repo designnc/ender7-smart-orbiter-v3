@@ -101,8 +101,7 @@ Custom mount for the fan and probe directly on SO3:
 
 ## Credits / Créditos
 
-Designed by / Diseño: **@designnc**  
-Based on: Smart Orbiter 3 by **LDO / MihaiDesign**  
+Based on: **Smart Orbiter 3** by **Dr. Róbert Lőrincz**, manufactured in collaboration with **LDO Motors**  
 Thanks to / Gracias a: Klipper + Ender 7 community
 
 ---

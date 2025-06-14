@@ -109,4 +109,16 @@ Thanks to / Gracias a: Klipper + Ender 7 community
 
 ## License / Licencia
 
-MIT or CC-BY-4.0 depending on file / según el archivo.
+This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
+
+You are free to remix, adapt, and build upon this work **non-commercially**, as long as you **credit the original author** (@designnc) and **license your new creations under identical terms**.
+
+More info: [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+---
+
+Este proyecto está licenciado bajo **Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**.
+
+Puedes modificar, adaptar y crear versiones derivadas **solo para uso no comercial**, siempre que **des crédito al autor original** (@designnc) y **compartas tus nuevas versiones bajo la misma licencia**.
+
+Más información: [https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es).
